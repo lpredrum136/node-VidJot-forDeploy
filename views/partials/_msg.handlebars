@@ -1,0 +1,8 @@
+{{#if success_msg}}
+    <div class="alert alert-success">{{success_msg}}</div><!--The var success_msg here is the global var defined near top of app.js-->
+    <!--Co the add bootstrap stuff de lam alert nay fade out neu muon-->
+{{/if}}
+
+{{#if error_msg}}
+    <div class="alert alert-danger">{{error_msg}}</div>
+{{/if}}

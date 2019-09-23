@@ -1,0 +1,9 @@
+{{#if error}}<!--Because Passport only set a "error" variable, not "errors" like we did in the array-->
+    <div class="alert alert-danger">{{error}}</div>
+{{/if}}
+
+{{#each errors}}
+    <div class="alert alert-danger">{{text}}</div>
+{{else}}<!--If there's no error -->
+
+{{/each}}
